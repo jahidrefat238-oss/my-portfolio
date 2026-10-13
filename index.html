@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jahidul Islam Refat | CSE Student &amp; Aspiring Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Jahidul Islam Refat, a Computer Science and Engineering student at IUBAT seeking software development internships and entry-level opportunities in full-stack web development.">
+  <meta name="author" content="Jahidul Islam Refat">
+  <meta name="theme-color" content="#7c3aed">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jahidul Islam Refat | Aspiring Full-Stack Developer">
+  <meta property="og:description" content="CSE student at IUBAT building practical web applications. Open to internship and entry-level opportunities.">
+
+  <!-- Apply saved theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        if (t !== "dark" && t !== "light") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- External dependency: Google Fonts. The site falls back to system fonts if it fails to load. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Icon sprite (inline SVG). Referenced with <use href="#i-name"> -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M15 3h-3a5 5 0 0 0-5 5v3H4v4h3v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Refat, back to top"><span class="logo-mark" aria-hidden="true">R</span>Refat<span class="logo-dot">.</span></a>
+
+      <nav id="primary-nav" class="nav-menu" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#about" data-nav="about">About</a></li>
+          <li><a href="#skills" data-nav="skills">Skills</a></li>
+          <li><a href="#projects" data-nav="projects">Projects</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Switch to dark theme">
+          <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+          <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-pill reveal">CSE Student · Aspiring Full-Stack Developer</p>
+          <h1 id="hero-title" class="reveal">
+            <span class="hero-name gradient-text">Jahidul Islam Refat</span>
+            <span class="hero-headline">Building useful web applications, one project at a time.</span>
+          </h1>
+          <p class="hero-lead reveal">
+            I'm a Computer Science and Engineering student at IUBAT who enjoys turning ideas into practical
+            web apps, from responsive interfaces to database-driven back ends. I'm looking for an internship
+            or entry-level role where I can learn on real projects and keep growing.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary btn-lg" href="#projects">Explore My Projects <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            <a class="btn btn-secondary btn-lg" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-meta reveal">
+            <ul class="social-row" aria-label="Social links">
+              <li>
+                <a class="social-link" href="https://github.com/jahidrefat238-oss" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+                  <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="https://www.facebook.com/jahidrefat.refat.5" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile (opens in a new tab)">
+                  <svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg><span>Facebook</span>
+                </a>
+              </li>
+            </ul>
+            <p class="status-pill">
+              <span class="status-dot" aria-hidden="true"></span>
+              Open to internship opportunities
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-wrap">
+            <div class="portrait-frame">
+              <img src="assets/profile.jpg" alt="Portrait photo of Jahidul Islam Refat" width="1254" height="1254" fetchpriority="high">
+            </div>
+          </div>
+          <ul class="hero-facts" aria-label="Quick facts">
+            <li><span class="fact-label">Studying</span><span class="fact-value">CSE · IUBAT</span></li>
+            <li><span class="fact-label">Semester</span><span class="fact-value">8th</span></li>
+            <li><span class="fact-label">Goal</span><span class="fact-value">Full-Stack Dev</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A little about me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm Jahidul Islam Refat, a Computer Science and Engineering student at IUBAT with an interest in
+              full-stack web development. I enjoy learning programming, solving problems, and building practical
+              web applications.
+            </p>
+            <p>
+              Through academic projects and hands-on practice, I've explored frontend development, APIs, and
+              database-driven applications. I'm continuously improving my skills and looking for opportunities to
+              contribute to real-world projects while growing as a software developer.
+            </p>
+          </div>
+
+          <aside class="about-cards" aria-label="Education and goals">
+            <article class="card info-card reveal">
+              <div class="info-icon tone-violet"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></div>
+              <div>
+                <h3>Education</h3>
+                <p class="info-main">B.Sc. in Computer Science and Engineering</p>
+                <p class="muted">IUBAT — International University of Business Agriculture and Technology</p>
+                <p class="info-tag">8th Semester</p>
+              </div>
+            </article>
+            <article class="card info-card reveal">
+              <div class="info-icon tone-pink"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></div>
+              <div>
+                <h3>Career Goal</h3>
+                <p class="info-main">Full-Stack Developer</p>
+                <p class="muted">Seeking software development internships and entry-level opportunities.</p>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Skills &amp; Technologies</p>
+          <h2 id="skills-title">What I work with</h2>
+          <p class="section-sub">Technologies I've learned and used through coursework and personal projects.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal" data-tone="amber">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>JavaScript</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>Python <span class="chip-note">learning</span></li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal" data-tone="blue">
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal" data-tone="green">
+            <h3>Backend &amp; Database <span class="card-note">learning</span></h3>
+            <ul class="chips">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>REST APIs</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal" data-tone="pink">
+            <h3>Tools</h3>
+            <ul class="chips">
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Featured Projects</p>
+          <h2 id="projects-title">Things I've built</h2>
+          <p class="section-sub">Academic and personal projects, with source code on GitHub and live demos where available.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="full-stack" aria-pressed="false">Full-Stack</button>
+          <button type="button" class="filter-btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+        </div>
+        <p class="visually-hidden" id="filter-status" role="status" aria-live="polite"></p>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="card project-card reveal" data-category="full-stack" data-accent="anha">
+            <div class="project-thumb">
+              <img src="assets/anha-project.png" alt="Screenshot of the Anha Construction Management System dashboard showing employees, projects, bill receive, bill pay and net profit cards" width="650" height="295" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Full-Stack · Web App</p>
+              <h3>Anha Construction Management System</h3>
+              <p class="project-desc">A web-based system designed to manage construction company staff, clients, projects, revenue, expenses, and financial summaries.</p>
+              <ul class="tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li></ul>
+              <div class="project-links">
+            <a class="btn btn-small btn-secondary" data-link="PROJECT_1_GITHUB_URL" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub<span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-category="frontend" data-accent="fitlog">
+            <div class="project-thumb">
+              <img src="assets/fitlog-project.png" alt="Screenshot of the FitLog workout library home page with the headline Train with intent. Log every set." width="1891" height="808" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Frontend · Web App</p>
+              <h3>FitLog — Fitness Tracking App</h3>
+              <p class="project-desc">A fitness application for browsing workouts, viewing workout details, and managing workout plans.</p>
+              <ul class="tags" aria-label="Technologies"><li>Next.js</li><li>JavaScript</li><li>Tailwind CSS</li><li>API</li></ul>
+              <div class="project-links">
+            <a class="btn btn-small btn-primary" data-link="PROJECT_2_DEMO_URL" target="_blank" rel="noopener noreferrer">
+              Live Demo <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+            <a class="btn btn-small btn-secondary" data-link="PROJECT_2_GITHUB_URL" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub<span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal" data-category="frontend" data-accent="devstack">
+            <div class="project-thumb">
+              <img src="assets/devstack-project.png" alt="Screenshot of the Dev Stack website home page with the headline Build Your Development Stack" width="1899" height="817" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Frontend · Web App</p>
+              <h3>Dev Stack — Development Stack Builder</h3>
+              <p class="project-desc">A developer stack-building application for exploring and managing a collection of technology tools.</p>
+              <ul class="tags" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
+              <div class="project-links">
+            <a class="btn btn-small btn-primary" data-link="PROJECT_3_DEMO_URL" target="_blank" rel="noopener noreferrer">
+              Live Demo <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+            <a class="btn btn-small btn-secondary" data-link="PROJECT_3_GITHUB_URL" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub<span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's work together</h2>
+          <p class="contact-lead">
+            I'm actively looking for software development internships and entry-level opportunities, and I'm
+            happy to collaborate on projects. If you think I could be a good fit, I'd love to hear from you.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-light btn-lg" href="mailto:jahidrefat238@gmail.com">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+              jahidrefat238@gmail.com
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/jahidrefat238-oss" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+              GitHub<span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="https://www.facebook.com/jahidrefat.refat.5" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>
+              Facebook<span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand"><span class="logo-mark" aria-hidden="true">R</span> Jahidul Islam Refat</p>
+      <ul class="footer-links" aria-label="Footer links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="muted">&copy; <span id="year">2026</span> Jahidul Islam Refat · Built with HTML, CSS and vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" aria-label="Scroll to top" hidden>
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </button>
+
+</body>
+</html>
